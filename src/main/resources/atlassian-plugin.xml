@@ -1,0 +1,25 @@
+<atlassian-plugin key="Jira Plugin Test 1" name="First Plugin" plugins-version="2">
+    <plugin-info>
+        <description>My Jira Plugin Description</description>
+        <version>1.0.0</version>
+
+        <vendor name="Uztelecom" url="Uztelecom.uz" />
+        <param name="plugin-icon">images/pluginIcon.png</param>
+        <param name="plugin-logo">images/pluginLogo.png</param>
+    </plugin-info>
+
+    <!-- add our i18n resource -->
+    <resource type="i18n" name="i18n" location="myPlugin"/>
+    
+    <!-- add our web resources -->
+    <web-resource key="myPlugin-resources" name="myPlugin Web Resources">
+        <dependency>com.atlassian.auiplugin:ajs</dependency>
+        
+        <resource type="download" name="myPlugin.css" location="/css/myPlugin.css"/>
+        <resource type="download" name="myPlugin.js" location="/js/myPlugin.js"/>
+        <resource type="download" name="images/" location="/images"/>
+
+        <context>myPlugin</context>
+    </web-resource>
+    
+</atlassian-plugin>
