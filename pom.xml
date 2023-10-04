@@ -162,6 +162,7 @@
                 <configuration>
                     <productVersion>8.2.3</productVersion>
                     <productDataVersion>8.2.3</productDataVersion>
+                    <enableQuickReload>true</enableQuickReload>
                 </configuration>
             </plugin>
 
